@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ira.jpg" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">aboutme</a></li>
+                    <li><a href="#">intrest</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>software development student at zindua school</p>
+                <h1> HI, im <span>ira</span><br> a student at zindua school</h1>
+            </div>
+    </div>
+    <div id="aboutme">
+        <div class="container">
+            <div class="about-col-1">
+                <img src="images/Jabari.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">about me </h1>
+                <p>im a student at zindua school currently persuing software development ,ive also finished my kcse exams and im yet to join a university</p>
+                <div class="tab-heading">
+                    <p class="tab-link active link"onclick="opentab('skills')">skill</p>
+                    <p class="tab-link"onclick="opentab('experience')">experience</p>
+                    <p class="tab-link"onclick="opentab('education')">education</p>
+                </div>
+                <div class="tab-content active-tab"id="skills">
+                    <ul>
+                        <li><span>python</span><br>programmer</li>
+                        <li><span>java</span><br>programmer</li>
+                        <li><span>html</span><br>programmer</li>
+                    </ul>
+            </div>
+            <div class="tab-content"id="experience">
+                <ul>
+                    <li><span>2021 -current</span><br>pythonprogrammer</li>
+                    <li><span>2019 -2020</span><br>java programmer</li>
+                    <li><span>2018 -2019</span><br>htmlprogrammer</li>
+                </ul>
+           </div>
+           <div class="tab-content"id="education">
+            <ul>
+                <li><span>2017</span><br>university of nairobi</li>
+                <li><span>2015</span><br>kenyatta university</li>
+                <li><span>2010</span><br>technological university</li>
+            </ul>
+    </div>
+            <div id="intrest">
+                <div class="container">
+                    <h1 class="subtitle">intrest</h1>
+                    <div class="my intrests">
+                        <div>
+                            <h2>watching movies</h2>
+                            <p>i like watching almost all genres of movies , i tend to wath action more than the others</p>
+
+                        </div>
+                        <div>
+                            <h2>reading novels</h2>
+                            <p>im a fan of reading mostly fantacy and action novels and also webnovels</p>
+                        </div>
+                        <div id="contact">
+                            <div class="container">
+                                <h1 class="subtitle">contact me</h1>
+                                <p><i class="fa-solid fa-paper-plane">irakolil31@gmail.com</i></p>
+                                <p><i class="fa-solid fa-phone"></i>07145627640</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name"placeholder="your name">
+                        <input type="email" name="email"placeholder="your email">
+                        <textarea name="message" rows="6"placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-links")
+        }
+    }
+</script>
+                
+</body>
+</html>
